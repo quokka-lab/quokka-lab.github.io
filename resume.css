@@ -12,3 +12,11 @@
 @media(max-width:380px){.portrait{display:none}.profile-header{display:block}.content-grid{grid-template-columns:80px minmax(0,1fr);gap:12px}.site-header nav{gap:8px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 @media print{@page{margin:16mm}body{font-size:10pt;line-height:1.45}.site-wrap{max-width:none;padding:0}.site-header,.section-index,.portrait,.project-pagination,.site-footer,.skip-link,.profile-links button{display:none!important}.profile-header{display:block;padding:0 0 16px}.overline{font-size:8pt}h1{font-size:25pt}.position{font-size:12pt}.bio{font-size:10pt;line-height:1.5}.content-grid{display:block;padding-top:18px}.resume-section{margin-bottom:16px;padding-bottom:16px}.resume-section>h2{font-size:14pt;margin-bottom:12px;break-after:avoid}.entry,.awards-list li,.skills-list>div{break-inside:avoid}.entry{margin-bottom:16px}.entry h3{font-size:10pt}.entry ul{font-size:9pt;line-height:1.5}.role,.date{font-size:9pt}.entry-heading{display:flex}.entry[hidden]{display:block!important}.report-link{font-size:8pt}.awards-list li,.skills-list>div{font-size:9pt}.profile-links{font-size:9pt}.profile-links a[href$='/cv/']{display:none}a{color:#202936}}
+
+/* Internship: organization | role, with dates aligned to the far right. */
+#internships .entry-heading{display:flex;align-items:baseline;justify-content:space-between;gap:6px 20px}
+.internship-label{display:flex;align-items:baseline;flex-wrap:wrap;gap:4px 9px;min-width:0}
+#internships .role{margin:0}
+.role-separator{color:#a9b1b9;font-size:12px}
+#internships .date{margin:0;text-align:right;white-space:nowrap;margin-left:auto}
+@media(max-width:600px){#internships .entry-heading{flex-wrap:wrap;gap:4px}#internships .date{font-size:10px}.internship-label{gap:3px 6px}}
