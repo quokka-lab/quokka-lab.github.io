@@ -33,3 +33,24 @@
  .section-index{padding:12px 0 15px;margin-bottom:20px}
  .profile-header{padding:24px 0 20px}
 }
+
+/* Keep chapter navigation beside the content at every screen width. */
+@media screen and (max-width:720px){
+ .content-grid{display:grid;grid-template-columns:120px minmax(0,1fr);gap:22px;padding-top:24px}
+ .section-index{position:sticky;top:20px;padding:0;margin:0;border:0;max-height:calc(100dvh - 40px);overflow-y:auto}
+ .section-index>p{display:block}
+ .section-index nav{flex-direction:column;flex-wrap:nowrap;gap:3px;border-left:1px solid var(--line)}
+ .section-index nav a{padding:8px 0 8px 10px;margin-left:-1px;border-bottom:0;border-left:2px solid transparent;line-height:1.5}
+ .section-index nav a[aria-current]{border-left-color:var(--accent)}
+ .skills-list>div{display:block}
+ .skills-list dt{margin-bottom:4px}
+ .date{white-space:normal}
+ .awards-list li{grid-template-columns:1fr;gap:2px;margin-bottom:14px}
+ .awards-list a{white-space:normal}
+}
+@media screen and (max-width:440px){
+ .content-grid{grid-template-columns:92px minmax(0,1fr);gap:16px}
+ .section-index nav a{font-size:10.5px;padding-left:8px}
+ .resume-section>h2{font-size:18px}
+ .resume-content{overflow-wrap:break-word}
+}
