@@ -58,3 +58,40 @@
 /* Official school wordmarks retain their original proportions. */
 .school-logo{display:block;width:166px;height:44px;max-width:100%;object-fit:contain;object-position:left center;margin:0 0 10px}
 @media screen and (max-width:440px){.school-logo{width:140px;height:38px;margin-bottom:8px}}
+
+/* Quiet editorial hierarchy with compact school emblems. */
+:root{--ink:#242c35;--muted:#73808c;--accent:#35576c;--line:#e5e9ec}
+.site-wrap{max-width:1120px}
+.school-title{display:flex;align-items:center;gap:12px}
+.school-logo{flex:0 0 32px;width:32px;height:36px;max-width:none;margin:0;object-fit:contain;object-position:center}
+.school-logo[src*="bnbu"]{flex-basis:28px;width:28px;height:28px;margin:0 2px}
+#education .entry-heading{align-items:center}
+#education .role,#education .entry ul{margin-left:44px}
+.entry h3{font-weight:600;letter-spacing:-.15px}
+.resume-section>h2{font-size:18px;font-weight:600;letter-spacing:-.3px}
+.section-index nav a{color:#74808b}
+.section-index nav a:hover{color:var(--ink);text-decoration:none;background:#f8f9fa}
+.date{font-variant-numeric:tabular-nums;font-size:11px}
+@media screen{
+ .content-grid{gap:42px;padding-top:30px}
+ .resume-section{padding-bottom:25px;margin-bottom:25px}
+ .entry{margin-bottom:22px}
+ .entry ul{color:#596573;line-height:1.75}
+ .profile-header{padding:32px 0 28px}
+ .bio{max-width:660px}
+}
+@media screen and (max-width:1000px){
+ #education .date{margin-left:44px;margin-top:5px}
+}
+@media screen and (max-width:720px){
+ .content-grid{gap:22px;padding-top:24px}
+ .school-title{gap:10px}
+ #education .role,#education .entry ul{margin-left:0}
+ #education .date{margin-left:0;margin-top:7px}
+ .entry h3{font-size:14px;line-height:1.5}
+}
+@media screen and (max-width:440px){
+ .content-grid{gap:16px}
+ .school-logo{flex-basis:26px;width:26px;height:30px}
+ .school-logo[src*="bnbu"]{flex-basis:23px;width:23px;height:23px;margin:0 1.5px}
+}
