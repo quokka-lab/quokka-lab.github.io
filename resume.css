@@ -22,3 +22,5 @@
 @media(max-width:600px){#internships .entry-heading{flex-wrap:wrap;gap:4px}#internships .date{font-size:10px}.internship-label{gap:3px 6px}}
 
 .degree-label{display:flex;align-items:center;flex-wrap:wrap;gap:4px 9px;min-width:0}#education .degree-label .role{margin:0}#education .degree-label+.date{margin-left:auto}@media(max-width:900px){#education .degree-label+.date{margin-left:34px;margin-top:3px}}@media(max-width:600px){.degree-label{gap:3px 6px}#education .degree-label+.date{margin-left:0}}
+
+#research-experience .internship-label .role{margin:0}#research-experience .entry-heading{display:flex;justify-content:space-between;align-items:baseline;gap:4px 16px;flex-wrap:wrap}#research-experience .date{margin-left:auto;text-align:right}
