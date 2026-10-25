@@ -26,3 +26,6 @@
 #research-experience .internship-label .role{margin:0}#research-experience .entry-heading{display:flex;justify-content:space-between;align-items:baseline;gap:4px 16px;flex-wrap:wrap}#research-experience .date{margin-left:auto;text-align:right}
 
 .interests-list{margin:0;color:#566370;font-size:12px;line-height:1.5}
+
+/* Concise skill rows: label and content share one line where space permits. */
+.skills-list>div{display:flex;align-items:baseline;gap:10px;margin-bottom:4px}.skills-list dt{flex:0 0 112px;margin:0}.skills-list dd{min-width:0}@media(max-width:600px){.skills-list>div{gap:6px;flex-wrap:wrap}.skills-list dt{flex-basis:auto}.skills-list dd{flex:1 1 160px}}
